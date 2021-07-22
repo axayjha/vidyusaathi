@@ -1,0 +1,17 @@
+div {
+  display: flex;
+  flex-direction: row;
+}
+.large-box {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin: 30px;
+  padding-left: 16px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  border-radius: 8px;
+  height: 380px;
+  width: 550px;
+  flex-direction: column;
+}

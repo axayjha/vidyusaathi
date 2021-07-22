@@ -1,0 +1,4 @@
+_id,stateCode,distCode,localCode,organisationIdentifier,_class
+ObjectId("5c7a11945339df3a3456275e"),WB,HGY,HGY,0001,com.vidyutsathi.models.PowerOrganisation
+ObjectId("5c7a11955339df3a34562760"),WB,HGY,HGY,0002,com.vidyutsathi.models.PowerOrganisation
+ObjectId("5c7af20a19bc2b3e0cb78c26"),string,string,string,string,com.vidyutsathi.models.PowerOrganisation

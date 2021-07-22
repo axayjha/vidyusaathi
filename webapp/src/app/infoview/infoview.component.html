@@ -1,0 +1,47 @@
+<mat-card class="topcard">
+  <mat-card-header>
+    <mat-card-title>Report Statistics</mat-card-title>
+    <mat-card-subtitle>{{area}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content style="margin-left: 16px; font-size: 17px;">
+    <h3>Statistical Data for Power Cuts</h3>
+    <p>
+      <mat-card-subtitle>View By: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <mat-button-toggle-group name="graphType" aria-label="Font Style" value="Number" #group1="matButtonToggleGroup" (change)="onChange1(group1.value)">
+          <mat-button-toggle value="Number">Number</mat-button-toggle>
+          <mat-button-toggle value="Duration">Duration</mat-button-toggle>
+        </mat-button-toggle-group>
+      </mat-card-subtitle>
+      Average: {{av1}}
+      <br>
+      Median: {{med1}}
+      <br>
+      District Average: {{dav1}}
+      <br>
+      State Average: {{sav1}}
+      <br>
+      National Average: {{nav1}}
+    </p>
+    <h3>Statistical Data for Power Availablity</h3>
+    <p>
+      <mat-card-subtitle>View By: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <mat-button-toggle-group name="graphType" aria-label="Font Style" value="1" #group2="matButtonToggleGroup" (change)="onChange1(group2.value)">
+          <mat-button-toggle value="1">Number</mat-button-toggle>
+          <mat-button-toggle value="2">Duration</mat-button-toggle>
+        </mat-button-toggle-group>
+      </mat-card-subtitle>
+      Average: {{av2}}
+      <br>
+      Median: {{med2}}
+      <br>
+      District Average: {{dav2}}
+      <br>
+      State Average: {{sav2}}
+      <br>
+      National Average: {{nav2}}
+    </p>
+
+    <button mat-stroked-button color="primary">More Info</button>
+
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,5 @@
+_id,provider,timestampStart,timestampEnd,_class
+ObjectId("5c7a11955339df3a34562765"),""{"$ref":"powerOrganisation","$id":"5c7a11955339df3a34562760","$db":""}"",10000,20000,com.vidyutsathi.models.Feedback
+ObjectId("5c7b3c0819bc2b0b4c9fc144"),""{"$ref":"powerOrganisation","$id":"string","$db":""}"",11000,19000,com.vidyutsathi.models.Feedback
+ObjectId("5c7b3c1b19bc2b0b4c9fc145"),""{"$ref":"powerOrganisation","$id":"string","$db":""}"",12000,13000,com.vidyutsathi.models.Feedback
+ObjectId("5c7b3c2e19bc2b0b4c9fc146"),""{"$ref":"powerOrganisation","$id":"string","$db":""}"",12500,16000,com.vidyutsathi.models.Feedback

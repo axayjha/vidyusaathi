@@ -1,0 +1,52 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button style="width: 50px; height: 50px;" (click)="onBack()">
+    <mat-icon>arrow_back_ios</mat-icon>
+  </button>
+  VidyutSaathi - Administrative - Subsidised User Report
+</mat-toolbar>
+<div class="mat-elevation-z4 large-box">
+  <div>
+  <span style="flex: 1 1 auto;"></span>
+` <div style="flex-direction: column">
+    <h4>Subsidised Customers Report</h4>
+    <mat-form-field appearance="outline" style="width: 320px">
+      <mat-label>Location</mat-label>
+      <input matInput placeholder="Type or Auto Detect" type="text">
+    </mat-form-field>
+    <button mat-stroked-button color="primary">AUTODETECT</button>
+</div>
+<span style="flex: 1 1 auto;"></span>
+<div style="flex-direction: column">
+  <mat-form-field appearance="outline" style="width: 320px">
+    <mat-label>Circle</mat-label>
+    <input matInput placeholder="Enter Circlet" type="text">
+  </mat-form-field>
+  <mat-form-field appearance="outline" style="width: 320px">
+    <mat-label>Division</mat-label>
+    <input matInput placeholder="Enter Division" type="text">
+  </mat-form-field>
+  <mat-form-field appearance="outline" style="width: 320px">
+    <mat-label>Subdivision</mat-label>
+    <input matInput placeholder="Enter Subdivsion" type="text">
+  </mat-form-field>
+</div>
+<span style="flex: 1 1 auto;"></span>
+</div>
+</div>
+<div class="mat-elevation-z4 large-box" style="height: 330px;">
+  <h3>Subsidised Customers</h3>
+  <mat-list>
+    <h3 mat-subheader>Customers</h3>
+    <mat-list-item *ngFor="let customer of customers">
+      <mat-radio-button value="customer.name"></mat-radio-button>
+      <p mat-line> {{customer.bookno}} </p>
+      <h4 mat-line>{{customer.name}}</h4>
+      <p mat-line> {{customer.usage}} </p>
+      <mat-divider></mat-divider>
+    </mat-list-item>
+    </mat-list>
+    <div>
+      <span style="flex: 1 1 auto;"></span>
+      <button mat-raised-button color="primary">GET DETAILS</button>
+    </div>
+</div>

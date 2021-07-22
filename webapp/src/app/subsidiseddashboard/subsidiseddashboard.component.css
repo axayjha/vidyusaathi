@@ -1,0 +1,27 @@
+div {
+  display: flex;
+  flex-direction: row;
+}
+.large-box {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin: 30px;
+  padding-left: 16px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  border-radius: 8px;
+
+  flex-direction: column;
+}
+mat-list {
+    border: 1px solid black;
+    overflow: auto;
+    height: 250px;
+    margin: 8px;
+    padding: 0px;
+}
+button {
+  margin: 5px;
+  width: 150px;
+}

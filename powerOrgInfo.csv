@@ -1,0 +1,5 @@
+_id,provider,serviceArea,providerName,address,_class
+ObjectId("5c7a11945339df3a3456275f"),""{"$ref":"powerOrganisation","$id":"5c7a11945339df3a3456275e","$db":""}"","{"upperLeft":{"lat":1.234,"lng":1.234},"lowerRight":{"lat":2.111,"lng":2.111}}",TEST,address,com.vidyutsathi.models.PowerOrganisationInfo
+ObjectId("5c7a11955339df3a34562761"),""{"$ref":"powerOrganisation","$id":"5c7a11955339df3a34562760","$db":""}"","{"upperLeft":{"lat":2.111,"lng":2.111},"lowerRight":{"lat":3.222,"lng":3.222}}",TEST,address,com.vidyutsathi.models.PowerOrganisationInfo
+ObjectId("5c7af22319bc2b3e0cb78c27"),""{"$ref":"powerOrganisation","$id":"5c7af20a19bc2b3e0cb78c26","$db":""}"","{"upperLeft":{"lat":2.111,"lng":2.111},"lowerRight":{"lat":3.222,"lng":3.222}}",TEST,address,com.vidyutsathi.models.PowerOrganisationInfo
+ObjectId("5c7af20a19bc2b3e0cb78c26"),,,,,com.vidyutsathi.models.PowerOrganisationInfo

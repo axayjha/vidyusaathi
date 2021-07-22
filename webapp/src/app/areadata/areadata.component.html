@@ -1,0 +1,25 @@
+<mat-card>
+  <mat-card-header>
+      <mat-card-title>Area Information</mat-card-title>
+  </mat-card-header>
+  <mat-card-content style="margin-left: 16px; font-size: 16px;">
+
+    <p>
+      State: {{rawdata.stateName}}
+      <br>
+      District: {{rawdata.districtList[0].distName}}
+      <br>
+      Locality: {{rawdata.districtList[0].locality[0].locationName}}
+      <br>
+      Total Population: {{rawdata.districtList[0].locality[0].landArea}}
+      <br>
+      Land Area: {{rawdata.districtList[0].locality[0].population}}
+      <br>
+    </p>
+  </mat-card-content>
+  <mat-card-actions style="margin: 16px;">
+    <button mat-stroked-button color="primary">Refresh Data</button>
+  </mat-card-actions>
+</mat-card>
+
+

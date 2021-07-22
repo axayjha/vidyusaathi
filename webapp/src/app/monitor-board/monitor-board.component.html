@@ -1,0 +1,41 @@
+<mat-toolbar color="primary">VidyutSaathi - Administrative
+  <span style="flex: 1 1 auto;"></span>
+  <mat-form-field class="providerSelector" style="font-size: 15px">
+    <mat-select [(value)]="selected" placeholder="Choose Provider" >
+      <mat-option>None</mat-option>
+      <mat-option value="option1">Option 1</mat-option>
+      <mat-option value="option2">Option 2</mat-option>
+      <mat-option value="option3">Option 3</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button mat-icon-button (click)="notifDrawer.toggle()">
+    <mat-icon matBadge="15" matBadgeColor="warn">calendar_today</mat-icon>
+  </button>
+  <button mat-icon-button>
+    <mat-icon>location_on</mat-icon>
+  </button>
+  <button mat-icon-button>
+    <mat-icon>account_circle</mat-icon>
+  </button>
+</mat-toolbar>
+<mat-drawer-container class="example-container">
+  <mat-drawer #notifDrawer mode="over" position="end">
+    <mat-list>
+      <h3 mat-subheader>Reported Feedback</h3>
+      <mat-divider></mat-divider>
+      <app-livefeedback></app-livefeedback>
+    </mat-list>
+  </mat-drawer>
+<mat-drawer-content>
+<div>
+<div>
+<app-infoview></app-infoview>
+</div>
+<span style="flex: 1 1 auto;"></span>
+  <div style="flex-direction: column">
+    <app-areadata></app-areadata>
+    <app-graphview></app-graphview>
+  </div>
+</div>
+</mat-drawer-content>
+</mat-drawer-container>

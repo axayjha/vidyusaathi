@@ -1,0 +1,15 @@
+<div style="flex-direction: column" class="chartView">
+  <div style="flex-direction: row">
+    <google-chart type='ColumnChart' [data]='myData' style="width: 1000px; height: 350px;" title="Power Cuts"></google-chart>
+  </div>
+
+  <div style="display: flex; flex-direction: row">
+    <span style="flex: 1 1 auto;"></span>
+    <mat-button-toggle-group name="graphType" aria-label="Font Style" style="margin-top: 15px;" #group3="matButtonToggleGroup" (change)="modeChange(group3.value)" value="1">
+      <mat-button-toggle value="1">Day</mat-button-toggle>
+      <mat-button-toggle value="2">Month</mat-button-toggle>
+      <mat-button-toggle value="3">Year</mat-button-toggle>
+    </mat-button-toggle-group>
+    <span style="flex: 1 1 auto;"></span>
+  </div>
+</div>

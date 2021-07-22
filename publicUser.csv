@@ -1,0 +1,3 @@
+_id,email,password,provider,customerID,_class
+ObjectId("5c7a11955339df3a34562763"),arnb.sen@mail.com,pass,"{"_id":"5c7a11955339df3a34562760","stateCode":"WB","distCode":"HGY","localCode":"HGY","organisationIdentifier":"0002"}",CUUIID,com.vidyutsathi.models.PublicUser
+ObjectId("5c7aefcb19bc2b3e0cb78c24"),arnb.sen@gmail.com,pass,"{"stateCode":"WB","distCode":"HGY","localCode":"HGY","organisationIdentifier":"0002"}",CUUJID,com.vidyutsathi.models.PublicUser

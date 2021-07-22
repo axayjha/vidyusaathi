@@ -1,0 +1,19 @@
+div {
+  display: flex;
+  flex-direction: row;
+}
+.providerSelector {
+  margin-right: 16px;
+}
+app-areadata {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-right: 16px;
+}
+.example-container {
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

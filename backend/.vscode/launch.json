@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FeedbackMain",
+            "request": "launch",
+            "mainClass": "com.arnbsen.feedback.FeedbackMain",
+            "projectName": "feedback"
+        }
+    ]
+}

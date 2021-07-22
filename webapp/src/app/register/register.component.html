@@ -1,0 +1,63 @@
+<app-topmenu></app-topmenu>
+<span [hidden]="!processing"><mat-progress-bar mode="indeterminate"></mat-progress-bar></span>
+
+<div>
+  <span style="flex: 1 1 auto;"></span>
+  <div class="large-box mat-elevation-z4">
+  <form novalidate [formGroup]="regForm" (submit)="onSubmit()" #formDir="ngForm">
+  <div style="flex-direction: column;">
+    <h4>Enter Your Registartion Details</h4>
+
+    <mat-form-field appearance="outline" style="width: 425px">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Enter your Email Address" type="email" formControlName="email" id="email">
+      <mat-error *ngIf="email.invalid && !email.hasError('required')">
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="email.hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 425px">
+      <mat-label>Password</mat-label>
+      <input matInput placeholder="Enter your desired Password" type="password" formControlName="password" id="password">
+      <mat-error *ngIf="password.hasError('required')">
+        Password is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 425px">
+    <mat-label>Retype Password</mat-label>
+    <input matInput placeholder="Retype your Password" type="password" formControlName="rePassword" id="rePassword">
+    <mat-error *ngIf="rePassword.hasError('required')">
+      Please <strong>Re type </strong> your password
+    </mat-error>
+    </mat-form-field>
+    <mat-error *ngIf="regForm.hasError('isequal')  && (regForm.touched || regForm.dirty)" style="font-size: 12px;">
+      Password don't match. Retype password
+    </mat-error>
+    <mat-form-field appearance="outline" style="width: 425px;">
+      <mat-label>Authorisation Code</mat-label>
+      <input matInput placeholder="Enter your Authorisation Code" type="text" formControlName="authCode" id="authCode">
+      <mat-error *ngIf="authCode.hasError('required')">
+        Authorisation code is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <br>
+    <p>Choose Your Role</p>
+    <mat-radio-group formControlName="type">
+      <mat-radio-button value="G" color="primary">Government Officials</mat-radio-button>
+      <p></p>
+      <mat-radio-button value="S" color="primary">Organisation Officials</mat-radio-button>
+    </mat-radio-group>
+    <mat-error *ngIf="type.hasError('required') && (regForm.touched || regForm.dirty)">
+      You have to select one Role
+    </mat-error>
+  </div>
+  <p></p>
+  <button mat-raised-button color="primary" style="width: 415px; margin-bottom: 10px;" type="submit" [disabled]="!regForm.valid">REGISTER</button>
+  <br>
+  <button mat-raised-button color="accent" style="width: 415px">CANCEL</button>
+  </form>
+  </div>
+  <span style="flex: 1 1 auto;"></span>
+</div>

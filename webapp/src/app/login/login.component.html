@@ -1,0 +1,27 @@
+<app-topmenu></app-topmenu>
+<div>
+  <span style="flex: 1 1 auto;"></span>
+<div style="flex-direction: column;" class="mat-elevation-z4 large-box">
+  <h4>Enter Your Login Credentials</h4>
+  <p [hidden]="!showSuccessMessage">You have successfully registered. You can  Login now.</p>
+  <form novalidate [formGroup]="loginUser" (submit)="onLogin()">
+  <mat-form-field appearance="outline" style="width: 320px">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="Enter your Email Address" type="email" formControlName="email">
+  </mat-form-field>
+  <mat-form-field appearance="outline" style="width: 320px">
+      <mat-label>Password</mat-label>
+      <input matInput placeholder="Enter your Password" type="password" formControlName="password">
+    </mat-form-field>
+  <div style="flex-direction: column;">
+  <br>
+  <button mat-raised-button color="primary" style="width: 315px; margin-bottom: 16px;" type="submit" [disabled]="!loginUser.valid">LOGIN</button>
+  <br>
+  <button mat-raised-button color="accent" style="width: 315px; margin-bottom: 30px;" routerLink = '/register'>REGISTER</button>
+  </div>
+  </form>
+  </div>
+  <span style="flex: 1 1 auto;"></span>
+</div>
+
+

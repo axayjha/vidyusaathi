@@ -1,0 +1,7 @@
+div {
+  display: flex;
+  flex-direction: row;
+}
+button {
+  width: 330px;
+}
